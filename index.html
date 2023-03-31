@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/dracula.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section> 
+					<h3>Reveal.js</h3> 
+					<ul>
+						<li>O que é?</li>
+						<!-- <li>Um plugin para a realização de apresentações em HTML, que tem estrutura visual similar a slides</li> -->
+					</ul>
+				</section>
+				
+				<section data-transition="zoom">
+					<section >
+						<h3>Utilização</h3>
+						<ul>
+							<li>Para utilizar o reveal.js de maneira simples e prática, basta clicar no link disponível no próprio <a href="https://revealjs.com/" target="_blank" >site</a> do plugin e substituir o conteúdo da página 'index', pelo conteúdo de sua apresentação.</li>							
+						</ul>
+					</section >
+					<section data-transition="concave">
+						<h3>Temas</h3>
+						<ul>
+							<li>O reveal.js disponibilza diversos <a href="https://revealjs.com/themes/" target="_blank">temas</a>, como este que estou utlizando, que permitem a customização dos slides.</li>
+						</ul>
+					</section>
+					<section data-transition="zoom" data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+						<h3>Temas</h3>
+						<ul>
+							<li>Caso você não tenha se identificado com nenhum dos temas pré disponibilzados pelo reveal.js, é possível ainda alterar a cor de <a href="https://revealjs.com/backgrounds/" target="_blank">fundo</a> do slide.</li>
+							<!-- como eu fiz nesse slide. Vale lembrar que ao alterar a cor de fundo do slide, a cor da letra e outros itens, poderão ser alterados automaticamente -->
+						</ul>
+					</section>
+				</section>
+				<!-- <section>o que é</section>
+
+				<section data-transition="convex">
+					<section>benefícios</section>
+					<section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">ele é muito bom</section>
+					<section>ele é legal</section>
+					<section>
+						é bonito						
+					</section>
+					<section>e é fácil de usar</section>
+				</section>
+
+				<section data-background-color="#ddd">falando sobre cores</section>
+
+				<section>
+					<pre><code data-trim data-noescape>
+						let klebya = "klebya"
+					</code></pre>
+				  </section> -->
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
